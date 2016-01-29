@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <com.zxing.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+     <TextView
+            android:id="@+id/capture_top_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="75.0dip"
+            android:gravity="bottom|center"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:text="将扫描框对准二维码，即可完成扫描"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+
+</FrameLayout>
